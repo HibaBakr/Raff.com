@@ -246,8 +246,12 @@ footer .container{
     .column-3{
         width: 30%;
     }
+    .column-3:last-child{
+      margin-top: 2em;
+    }
     .column-2 {
         width: 15%;
+        margin-top: 2em;
     }
 }
 
