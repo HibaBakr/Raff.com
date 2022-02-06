@@ -217,7 +217,7 @@ footer .container{
 /*********نظام الاعمدة في السي اس اس مجموع الاعمدة 10********/
 
 [class^=column-] {
-    width: 150%;
+    width: 100%;
     margin-top: 1em;
     margin: 0.6em;
 }
@@ -243,11 +243,11 @@ footer .container{
     [class^=column-]:last-child {
         padding-right: o;
     }
-    .col-5{
-        width: 50%;
+    .column-3{
+        width: 30%;
     }
-    .col-2 {
-        width: 16.6666%;
+    .column-2 {
+        width: 15%;
     }
 }
 
