@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  /****سرعة ظهور محتويات الصفحة وقت التحميل****/
+  transition: all .5s ease-in-out;
+}
+
+/************body***********/
+body {
+  margin: 0;
+  padding: 0;
+  width: 99%;
+}
+/****فصل كل سكشن عن الاخر ****/
+.clearfix::after,
+section::after,
+footer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/****حاوية نحتوي فيها سيكشن او معلومة معينة معين ثابتة للموقع كله ****/
+.container {
+  width: 95%;
+  max-width: 70rem;
+  padding: 0;
+  
+}
+
+/************typography********************/
+/*************هنا محدد خواص الخطوط والكتابة*******************/
+h1 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+.unst-li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-top: .5em;
+}
+
+/*********************header**************/
+header {
+  width: 100%;
+  
+}
+/******المنيو العلوي******/
+.topnav {
+  width: 100%;
+  height: 2.3em;
+  background-color: rgba(119, 20, 7, 0.438);
+  text-align: center;
+  margin: 0%;
+  padding: 0;
+}
+
+.topnav-content {
+  float: right;
+  display: inline-flex;
+  margin: 0 5em 0 0 ;
+}
+
+.nav-msg{
+  float: left;
+  margin:0 0 0 5em;
+  text-align: center;
+}
+
+/**********المنيو السفلي***********/
+.navbar {
+  background-color: rgb(255, 248, 248);
+  width: 100%;
+  height: 5em;
+  margin: 0%;
+  padding: 0;
+  color: black;
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: rgba(119, 20, 7, 0.438);
+  color: blanchedalmond;
+}
+
+.nav-logo{
+  margin-left: 5em;
+}
+
+.bottomnav-content{
+  margin: 0 5em 0 0 ;
+}
+.btn{
+  padding: 0;
+  margin: 0 1em;
+}
+.dropdown-toggle:enabled{
+  border: none;
+
+}
+/************************middle sections content***************/
+
+/************home banner*************/
+.home-banner{
+  position: relative;
+  background-color: rgb(243, 242, 242);
+  width: 100%;
+}
+/****ميثود في السي اس اس تستخدم للتحكم بالمحتوى تبعا لحجم الشاشة****/
+@media (min-width:60rem) {
+  .home-banner {
+      height: 55ch
+  }
+}
+.news {
+  display: none;
+}
+
+.bannercontainer img {
+  width: 100%;
+  height: 55ch;
+}
+
+
+
+
+/***************categories****************/
+.feat{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 6em;
+  background-color: #F4F1F1;
+  margin: 2em;
+}
+.ghp1 {
+  display:inline;
+  align-content: center;
+  font-size: 1.6em;
+  margin: 1em;
+}
+.ghp1 img{
+  margin: 0;
+}
+
+.row {
+  display:flex;
+  text-align: center;
+  width: 95%;
+  
+}
+
+.column {
+  flex: 15em;
+}
+.column img{
+  width: 15em;
+  height: 20em;
+}
+
+/****************sثction before footer************/
+
+.bef-foot-sec {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(7, 7, 7);
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/img/pic1.jpg");
+  height: 13em;
+  margin-top: 1.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.5;
+}
+
+/***********************footer*********************/
+footer {
+  background: rgb(233, 201, 141);
+  color: #FFF;
+  padding: 2em 0;
+}
+footer .container{
+  margin-left:5em;
+  width: 80%;
+  height: 100%;
+  text-align: left;
+}
+.footer h3 {
+  color: #044d2e;
+  font: normal 36px 'Roboto', cursive;
+  margin: 0 0 10px;
+}
+
+.footer h3 span {
+  color: #eef3f5;
+}
+#footlogo{
+  width: 4em;
+  
+}
+
+/******************* column system ******************/
+/*********نظام الاعمدة في السي اس اس مجموع الاعمدة 10********/
+
+[class^=column-] {
+    width: 150%;
+    margin-top: 1em;
+    margin: 0.6em;
+}
+
+[class^=column-] :first-child {
+    padding-top: 0;
+}
+
+.column-2 {
+    width: 40%;
+    float: left;
+}
+
+@media (min-width: 40rem) {
+    [class^=column-] {
+        float: left;
+        padding: 0 .5em;
+        margin-top: 0;
+    }
+    [class^=column-] :first-child {
+        padding-left: 0;
+    }
+    [class^=column-]:last-child {
+        padding-right: o;
+    }
+    .col-5{
+        width: 50%;
+    }
+    .col-2 {
+        width: 16.6666%;
+    }
+}
+
