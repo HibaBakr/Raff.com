@@ -1,211 +1,386 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <title>Raff.com</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script1.js"></script>
+<title>My Raff</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Raff website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="css/header_footer.css">
+<link rel="stylesheet" type="text/css" href="css/main_stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
-<body onload="showImg()">
-  <!------------------header starts   here--------------------->
-  <header>
-    <!-------bootstrap is used here-->
-    <!---------top menu---------->
-    <div class="topnav">
-      <nav class="topnav-content">
-        <div class="btn-group-sm">
-          <a href="#"><button type="button" class="btn">التنبيهات</button></a>
-        </div>
+<body>
 
-        <div class="btn-group-sm">
-          <a href="#"><button type="button" class="btn"><span class="glyphicon glyphicon-user"></span>تسجيل الدخول</button></a>
-        </div>
+<div class="body_container">
 
-        <div class="btn-group-sm btn-link">
-          <a href="#"><button type="button" class="btn">السلة</button></a>
-        </div>
-      </nav>
+	<!-- Header starts -->
 
-      <div class="nav-search">
-        <form action="#">
-          <input type="search" placeholder="Seach...">
-          </form>
-      </div>
-    </div>
-<!-----------------second menu------------------------------->
-    <div class="navbar">
-      <div class="nav-logo">
-        <img src="https://f.top4top.io/p_2228rsrc91.png" alt="The logo is not available" width="70">
-      </div>
+	<header class="header transition_300">
 
-      <nav class="bottomnav-content">
-        <div class="btn-group btn-link">
-          <a href="#"><button type="button" class="btn">هدايا</button></a>
-        </div>
+		<!-- Top Navigation -->
 
-        <div class="btn-group btn-link">
-          <a href="#"><button type="button" class="btn">عناية</button></a>
-        </div>
+		<div class="top_nav">
+			<div class="container">
+				<div class="row" >
+					<div class="col-md-6">
+						<div class="top_nav_left">يوجد منتجات جديدة في قسم  العناية</div>
+					</div>
+					<div class="col-md-6 text-right">
+						<div class="top_nav_right">
+							<ul class="top_nav_menu">
 
-        <div class="btn-group btn-link">
-          <a href="#"><button type="button" class="btn">أزياء</button></a>
-        </div>
+								<!-- Massages / Language / Account -->
+								<li class="massages">
+									<a href="chatting.html">
+										<i class="fa fa-envelope"></i>
+										<span id="massages_no" class="massages_no">0</span>
+									</a>
+									
+								</li>
+								<li class="language">
+									<a href="#">
+										العربية
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="language_selection">
+										<li><a href="#">English</a></li>
+									</ul>
+								</li>
+								<li class="account">
+									<a href="#"><i class="fa fa-user"></i>
+										  حسابي
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="account_selection">
+										<li ><a href="#"><span ><i class="fa fa-sign-in" aria-hidden="true"></i></span>الدخول</a></li>
+										<li><a href="#"><span><i class="fa fa-user-plus" aria-hidden="true"></i></span>التسجيل</a></li>
+									</ul>
+								</li>
 
-        <div class="btn-group btn-link">
-          <a href="#"><button type="button" class="btn">طعام</button></a>
-        </div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <div class="btn-group btn-link">
-          <a href=""><button type="button" class="btn">الرئيسية</button></a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-------------------header ends here--------------------->
-<!---------------home banner starts here------------------------>
-  <section class="home-banner">
-    <div class="bannercontainer">
+		<!-- Main Navigation -->
 
-      <div class="news">
-        <a href="www.google.com">
-          <img src="media/img/offer1.png" alt="offer" >
-        </a>
-      </div>
+		<div class="main_nav_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-right">
+						<div class="logo_container">
+							<a href="#"><img src="https://f.top4top.io/p_2228rsrc91.png" alt="The logo is not available" width="70">R<span>aff</span></a>
+						</div>
+						<nav class="navbar">
+							<ul class="navbar_menu">
+								<li><a href="#">الرئيسية</a></li>
+								<li><a href="#">طعام</a></li>
+								<li><a href="#">أزياء</a></li>
+								<li><a href="#">عناية</a></li>
+								<li><a href="#">العروض</a></li>
+							</ul>
+							<ul class="navbar_user">
+								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+								<li class="cart">
+									<a href="#">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<span id="cart_items" class="cart_items">0</span>
+									</a>
+								</li>
+							</ul>
+							<div class="side_container">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- side menu of Header-->
+	<div class="side_menu_overlay"></div>
+	<div class="side_menu">
+		<div class="side_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+		<div class="side_menu_content text-right">
 
-      <div class="news">
-        <a href="www.google.com">
-          <img src="media/img/offer2.png" alt="offer" >
-        </a>
-      </div>
+			<ul class="menu_top_nav">
+			
+				<li class="menu_item has-children">
+					<a href="#">
+						العربية
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="menu_selection">
+						<li><a href="#">English</a></li>
+					</ul>
+				</li>
+				<li class="menu_item has-children">
+					<a href="#">
+						<i class="fa fa-user"></i>
+						حسابي
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="menu_selection">
+						<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>الدخول</a></li>
+						<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>التسجيل</a></li>
+					</ul>
+				</li>
+				<li class="menu_item"><a href="#">الرئيسية</a></li>
+				<li class="menu_item"><a href="#">طعام</a></li>
+				<li class="menu_item"><a href="#">أزياء</a></li>
+				<li class="menu_item"><a href="#">عناية</a></li>
+				<li class="menu_item"><a href="#">عروض</a></li>
+				<li class="menu_item">
+					<a href="#">
+						<span id="massages_no"> 0 </span>
+						<i class="fa fa-envelope"></i>
+						
+					</a>
+					
+				</li>
+			</ul>
+		</div>
+	
+	</div>
+<!--header ends -->
 
-      <div class="news">
-        <a href="www.google.com">
-          <img src="media/img/offer3.png" alt="offer" >
-        </a>
-      </div>
-    </div>
-  </section>
-<!---------------home banner ends here------------------------>
+<!------------ضعي الكود هنا-------------->
 
-<!---------------home features section starts here-------------->
-  <section class="container">
-    <div class="feat">
-      <div class="ghp1">
-        <h4>أنشأ طلبك الخاص<span><img src="media/img/yes.png" alt="icon" ></span></h4>
-      </div>
 
-      <div class="ghp1">
-       <h4>التعاون مع الأسر المنتجة<span><img src="media/img/yes.png" alt="icon"  ></span></h4> 
-      </div>
+	<!-- slider -->
 
-      <div class="ghp1">
-        <h4>مبلغ اشتراك رمزي<span><img src="media/img/yes.png" alt="icon" ></span></h4>
-      </div>
-    </div>
-  </section>
-<!---------------home features section ends here------------------------>
- 
- <!---------------home categories starts here------------------------>
- <!---------استخدام الصفوف والاعمدة لتقسيم المحتوى---------------->
- <section class="container">  
- <div class="row">
-      <div class="column">
-        <img src="media/img/food2 .png" alt="food" >
-      </div>
-      <div class="column">
-        <img src="media/img/gifts.png" alt="gifts" >
-      </div>
-      <div class="column">
-        <img src="media/img/clothes.png" alt="clothes" >
-      </div>
-      <div class="column">
-        <img src="media/img/1-1.png" alt="categry" >
-      </div>
-    </div>
+	<div class="main_slider" style="background-image:url(media/image/slider.jpg)">
+		<div class="container fill_height">
+			<div class="row align-items-sm-center fill_height">
+				<div class="col">
+					<div class="main_slider_content">
+						<h6>متاجر الازياء\ متاجر العناية</h6>
+						<h1>خصومات تصل إلى %20 </h1>
+						<div class="slider_button shop_now_button"><a href="#">تسوق الآن</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="row">
-      <div class="column">
-        <img src="media/img/1-2.png" alt="products" >
-      </div>
-      <div class="column">
-        <img src="media/img/f1.jpg" alt="food">
-      </div>
-      <div class="column">
-        <img src="media/img/f2.jpg" alt="gifts">
-      </div>
-      <div class="column">
-        <img src="media/img/f3.jpg" alt="dress" >
-      </div>
-    </div>
-  </section> 
-<!---------------home categories ends here------------------------>
 
-<!---------------home before footer section starts here------------>
-  <section>
-    <div class="pic">
-      <div class="bef-foot-sec">
-        <h3>هنا في رف حيث الجميع في مكان واحد</h3>
-      </div>
-    </div>
-    </div>
-  </section>
-<!---------------home before footer section ends here------------>
+	<!-- Benefit -->
 
-<!--------------- footer starts here------------>
-  <footer>
-    <!----------حاوية نحتوي فيها محتويات الفوتر------------>
-    <div class="container">
-<!---------------column system------------>
-<!------تقسيم الفوتر باستخدام نظام الاعمدة---------->
-      <div class="column-3">
-        <ul class="unst-li">
-          <li><img src="https://f.top4top.io/p_2228rsrc91.png" id="footlogo">
-            <h3>RAFF<span>رف</span></h3>
-          </li>
-          <li>اسم الشركة الرسمي التجاري</li>
-          <li>الموقع الرئيسي للشركة(عنوان البريد)</li>
-        </ul>
-      </div>
+	<div class="benefit">
+		<div class="container">
+			<div class="row benefit_row">
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						
+						<div class="benefit_content">
+							<h6>منتجات تعاونية</h6>
+							<p>التعاون بين الأسر المنتجة</p>
+						</div>
+						<div class="benefit_icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_content">
+							<h6>اشتراك رمزي</h6>
+							<p>طرق دفع متنوعة وآمنة</p>
+						</div>
+						<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_content">
+							<h6>طلب خاص</h6>
+							<p>انشأ طلبك بمواصفاتك الخاصة</p>
+						</div>
+						<div class="benefit_icon"><i class="fa fa-edit" aria-hidden="true"></i></div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">	
+						<div class="benefit_content">
+							<h6>متاجر سعودية</h6>
+							<p> منتجات صنعت بنفاني وحب</p>
+						</div>
+						<div class="benefit_icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-      <div class="column-2">
-        <ul class="unst-li">
-          <li><strong>حساباتنا</strong></li>
-          <li>الايميل</li>
-          <li>تويتر</li>
-          <li>إنستقرام</li>
-        </ul>
-      </div>
+	<!-- features -->
 
-      <div class="column-2">
-        <ul class="unst-li">
-          <li><strong>تواصل معنا</strong></li>
-          <li>الاقتراحات</li>
-          <li>الشكاوى</li>
-          <li>السياسات</li>
-        </ul>
-      </div>
-    </div>
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title">
+						<h2></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_container">
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/food2\ .png)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
+							
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/f1.jpg)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
+						
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/1-1.png)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/f2.jpg)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
+							
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row features_container">
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/f3.jpg)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
 
-    <div class="column-3">
-      <ul class="unst-li">
-        <li><strong>حول رف؟</strong></li>
-        <li>
-          <p>كلام حلو عنا طويل وشيق ويغري المشتري بالتصفح والشراء والتسجيل وبيع اعضائه وتسليم نفس للشرطة</p>
-        </li>
-      </ul>
-    </div>
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/1-2.png)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
 
-  </footer>
-  <!---------------footer ends here------------>
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/clothes.png)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 feature_item_col">
+					<div class="feature_item">
+						<div class="feature_background" style="background-image:url(media/image/gifts.png)"></div>
+						<div class="feature_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="feature_title">كلام توضيحي</h4>
+							<a class="feature_more" href="#">تسوق</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- motto -->
+
+	<div class="motto" style="background-image:url(media/image/cupcake.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 align-items-md-center " >
+					<div class="motto_text d-flex flex-column justify-content-center align-items-lg-center align-items-md-center text-center">
+					
+						<p>المكان الذي يجتمع فيه  المبدعون</p>
+					</div>
+				</div>
+				<div class="col-lg-6 align-items-md-center " >
+					<div class="motto_text d-flex flex-column justify-content-center align-items-lg-center align-items-md-center text-center">
+						<h4>R<span style="color: #C4A39B;">aff</span> ر<span style="color: #C4A39B;">ف</span</h4>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!------------الكود ينتهي هنا-------------->
+<!-- Footer starts -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
+						<ul class="footer_nav">
+							<li><a href="#">السياسات</a></li>
+							<li><a href="#">أسئلة شائعة</a></li>
+							<li><a href="contact.html">تواصل معنا</a></li>
+							<li><a href="#">حول رف؟</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+						<ul>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer_nav_container">
+						<div class="cr">RAFF 2022</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+<script src="js/script1.js"></script>
+
 </body>
 
-</html
+</html>
