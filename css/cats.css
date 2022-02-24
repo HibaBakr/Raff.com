@@ -1,0 +1,40 @@
+.catpic{
+	margin:auto;
+	margin-top:200px;
+	
+	
+}
+.probiggh{
+width: 20%;
+margin-top:50px;
+margin-bottom:50px;
+height: 370px;
+float: left;
+margin-left: 35px;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.probiggh:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.productgh {
+  padding: 15px 16px;
+
+}
+.probiggh1{
+	width: 1280px;
+overflow: hidden;
+padding-bottom: 90px;
+
+}
+.h2gh{
+		 text-align: center;  
+		  font-family:Verdana, Geneva, Tahoma, sans-serif;
+		  font-size:16px;
+}
+.pgh{
+text-align: center;  
+		  font-family:Verdana, Geneva, Tahoma, sans-serif;
+		  font-size:14px;	
+}
+.catnamegh{
+color:#DD8470;}

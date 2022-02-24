@@ -1,0 +1,120 @@
+.ghbigset{
+	
+margin-top:180px;
+ color:#808080;
+margin-bottom:40px;
+width:100%;
+	text-align:center;
+  height: 870px; 
+      border-radius: 10px;
+background-color:white;
+      box-shadow: 0 0 30px  #F1E0DC;
+}
+
+.ghbigset2{
+width:100%;
+padding: 15px;
+}
+
+.ghbig3{
+width:40%;
+ border-radius: 10px;
+}
+
+.ghbig{
+margin-top:180px;
+ color:#808080;
+
+margin-bottom:40px;
+width:1200px;
+	text-align:center;
+  height: 920px; 
+      border-radius: 10px;
+background-color:white;
+      box-shadow: 0 0 30px  #F1E0DC;
+}
+.ghcustom{ 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      color: black;
+      line-height: 22px;
+	   text-align: right;
+	
+
+      }
+	  
+	
+	   #gh input,#gh textarea,#gh select{
+		 
+	   width: 90%;
+	   height:50px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+      }
+  
+
+.ghbig2{
+		padding: 25px;
+	float:right;
+width: 50%;	
+}
+
+ #gh2{
+	 color:#808080;
+		 text-align: center;  
+		  font-family:Verdana, Geneva, Tahoma, sans-serif;
+		  font-size:40px;
+	  }
+	   #gh3{
+		font-family:Verdana, Geneva, Tahoma, sans-serif;   
+		   font-size:16px; 
+	   }
+.btn-blockgh {
+      margin-top: 10px;
+	   margin-bottom: 20px;
+	   
+      text-align: center;
+      }
+	  
+      #ghwhat {
+      width: 100px;
+      padding: 7px;
+      border: none;
+      border-radius: 5px; 
+      background:  #C4A39B;
+      font-size: 19px;
+      color: #fff;
+      cursor: pointer;
+      }
+#gh{
+	text-align:right;
+	
+}
+
+.ghcustom44{
+background-color:rgb(245, 245, 245);
+}
+
+.setgh2{
+	padding:22px;
+	width: 44%;
+	float:left; 
+	height:900px;
+	
+}
+.setgh1{
+padding:22px;	
+width: 50%; 
+float:left; 
+height:920px;
+
+}
+#gh span{
+	color:red;
+}
+
