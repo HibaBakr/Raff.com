@@ -11,11 +11,12 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" type="text/css" href="../css/header_footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="../css/main_stylesheet.css">
-	<link rel="stylesheet" href="../css/comments.css">
+	<link rel="stylesheet" type="text/css" href="../css/ProfileSettingCustomer.css">
+
 </head>
 
 <body>
@@ -94,11 +95,11 @@
 									<li><a href="../index.html">الرئيسية</a></li>
 								</ul>
 								<ul class="navbar_user">
-									<li><a href="../search.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 									<li><a href="../notification.html"><i class="fa fa-bell" aria-hidden="true"></i></a>
 									</li>
 									<li class="cart">
-										<a href="../customer/cart.html">
+										<a href="#">
 											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 											<span id="cart_items" class="cart_items">0</span>
 										</a>
@@ -164,35 +165,59 @@
 
 		<!------------ضعي الكود هنا-------------->
 
-		<div class="container fill_height">
-			<div class="commentgh">
-				<nav id="navcomment">
-					متجر هوم ميد
-					<img src="../media/image/hm.jpg" width="50px" height="50px">
-				</nav>
-				<br>
-				<form id="formcomment">
-					<textarea class="commentuser" placeholder="شاركهم برأيك"></textarea><br><br>
-					<button class="butcom" type="submit" href="/">نشر</button>
-				</form> <br><br>
-				<p class="comp"> :أراء العملاء <img src="../media/image/comment.jpg" width="50px" height="50px"></p>
-				<div id="divcomment">
-					<p class="pcomment">جربت الكوكيز من عندهم جدا لذيييذ <img src="../media/image/user.jpg" width="30px"
-							height="30px"></p> <br>
-					<p class="pcomment"> البروانيز طعم والتعامل ممتاز <img src="../media/image/user.jpg" width="30px"
-							height="30px"> </p> <br>
-					<p class="pcomment">تعاملهم محترم ومو اخر مرة اطلب منهم <img src="../media/image/user.jpg" width="30px"
-							height="30px"></p> <br>
-					<p class="pcomment"> طلبت منهم امس ووصلني فررش الله يعطيهم العافية <img src="../media/image/user.jpg"
-							width="30px" height="30px"> </p>
+
+		<div class="BAcontainer container">
+			<div class="BApadding">
+				<div class="BAcard BAuser-card">
+					<div class="BAcardblock">
+						<div>
+							<h3 class="">إعدادات الحساب</h3>
+						</div>
+						<div>
+							<h6 class="BAfont">الاسم الأول</h6>
+							<div>
+								<label for="floatingInputGrid"></label><input class="BAlabel" type="text" value="">
+							</div>
+						</div>
+						<div>
+							<h6 class="BAfont">الاسم الأخير</h6>
+							<div><label></label>
+								<input class="BAlabel" type="text" value="">
+							</div>
+						</div>
+						<div>
+							<h6 class="BAfont">كلمة المرور </h6>
+							<div><label></label><input class="BAlabel" type="text" value="">
+							</div>
+						</div>
+						<div>
+							<h6 class="BAfont">رقم الجوال </h6>
+							<div><label></label><input class="BAlabel" type="text" value="">
+							</div>
+						</div>
+
+						<div>
+							<h6 class="BAfont">الايميل</h6>
+							<div><label></label><input class="BAlabel" type="email" value="">
+							</div>
+						</div>
+						<div>
+							<h6 class="BAfont">المدينة</h6>
+							<div><label></label><input class="BAlabel" type="text" value="">
+							</div>
+						</div>
+						<div>
+							<h6 class="BAfont">العنوان</h6>
+							<div><label></label><input class="BAlabel" type="text" value="">
+							</div>
+						</div>
+
+						<div><button class="BAbutton" type="button">حفظ التغييرات</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-
-
-		<!------------الكود ينتهي هنا-------------->
-		<!-- Footer starts -->
 
 		<footer class="footer">
 			<div class="container">
@@ -212,10 +237,14 @@
 						<div
 							class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
 							<ul>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+								</li>
 							</ul>
 						</div>
 					</div>
