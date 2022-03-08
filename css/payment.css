@@ -1,0 +1,74 @@
+
+
+.rounded {
+    border-radius: 1rem
+}
+
+.nav-pills .nav-link {
+    color: #555
+}
+
+
+
+input[type="radio"] {
+    margin-right: 5px
+}
+
+.bold {
+    font-weight: bold;
+
+}
+.nav-pills .nav-link.active{
+  	background-color:#C4A39B;
+    color: white;
+}
+.subscribe{
+  background-color:#C4A39B;
+  color: white;
+  border-color: #C4A39B;
+}
+.subscribe:hover{
+	color:black;
+	background-color:#cfb6af;
+	border-color: #737373;
+	border-width:3px;
+text-align:center;
+}
+
+.btn-primary {
+    background-color:#C4A39B;
+  color: white;
+  border-color: #C4A39B;
+	border-width:2px;
+	font-size:25px;
+	position: relative;
+  top: 80%;
+  left:-40%;
+ 
+
+}
+.btn-primary:hover{
+	color:black;
+	background-color:#cfb6af;
+	border-color: #737373;
+	border-width:3px;
+
+
+
+}
+.card-header:first-child{
+	box-shadow: 5px 5px 5px 5px #737373;
+	
+	
+}
+.card{
+
+		text-align:right;
+	margin:25px;
+  margin-left: -30%;      
+    margin-right: -30%;
+    width: auto;
+
+}
+
+.x{margin-top:150px;}
