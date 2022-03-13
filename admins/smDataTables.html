@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="css/adminstyle.css">
+	<link rel="stylesheet" href="css/adminResponsive.css">
+	<title>Raff admin</title>
+</head>
+
+<body>
+
+	<div class="sidenav d-flex flex-column flex-shrink-0  ">
+		<div class="admin-logo flex-column nav-link text-md-center ">
+			<img src="https://f.top4top.io/p_2228rsrc91.png" alt="" style="width: 60px; height: 60px;">
+			R<span style="color: #ffffff;">AFF</span>
+		</div>
+		<br>
+		<div class="nav nav-pills flex-column mb-auto">
+			<div>
+				<a href="#" class="nav-link link-dark">
+					<i class="fa fa-dashboard" width="15" height="15"></i>
+					لوحة البيانات
+				</a>
+
+			</div>
+			<br>
+			<div class="nav-item">
+				<h4 href="index.html" class="nav-link" aria-current="page">
+					<i class="fa fa-mouse-pointer" width="15" height="15"></i>
+					الموقع
+				</h4>
+				<ul>
+					<li><a href="promotions.html">تحديث الهدايا</a></li>
+					<li><a href="addCategory.html">اضافة قسم</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h4 href="#" class="nav-link link-dark">
+					<i class="fa fa-shopping-bag" width="16" height="16"></i>
+					المتاجر
+				</h4>
+				<ul>
+					<li><a href="smDataTables.html">البيانات</a></li>
+					<li><a href="Approval.html">التحقق</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4 href="#" class="nav-link link-dark">
+					<i class="fa fa-address-book" width="16" height="16"></i>
+					العملاء
+				</h4>
+				<ul>
+					<li><a href="cusDataTables.html">البيانات</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="main">
+		<nav class="navbar navbar-expand-sm  ">
+
+			<!-- Dropdown -->
+			<div class="nav-item dropdown ">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					<img src="" alt="" width="32" height="32" class="rounded-circle me-2">
+					<strong>حسابي </strong>
+				</a>
+				<div class="dropdown-menu ">
+					<a class="dropdown-item" href="#">اعدادات</a>
+					<a class="dropdown-item" href="#">الخروج</a>
+				</div>
+			</div>
+
+			<!-- Links -->
+			<div class="navbar-nav ">
+				<div class="nav-item">
+					<a class="nav-link" href="#"><i class="fa fa-bell"></i></a>
+				</div>
+				<div class="nav-item">
+					<a class="nav-link" href="#"><i class="fa fa-envelope"></i></a>
+				</div>
+
+			</div>
+		</nav>
+			<!--HEADER AND SIDE NAV END HERE-->
+
+
+        <div class="container smdata">
+            <h2>بيانات المتاجر</h2>
+            <div class="card-box mb-30">
+                <div class="pb-20">
+                    <table class="data-table table stripe hover nowrap">
+                        <thead>
+                            <tr>
+                                <th class="table-plus datatable-nosort">الاسم</th>
+                                <th>عدد المنتجات</th>
+                                <th>الموقع</th>
+                                <th>الرقم</th>
+                                <th>تاريخ الانضمام</th>
+                                <th class="datatable-nosort">خيارات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-plus">بخور الامراء</td>
+                                <td>25</td>
+                                <td>Riyadh</td>
+                                <td>0522134587 </td>
+                                <td>29-03-2018</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                            href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> عرض</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> تعديل</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> حذف</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-plus">عباية العنود</td>
+                                <td>30</td>
+                                <td>medina</td>
+                                <td>0598871324 </td>
+                                <td>29-03-2018</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                            href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> عرض</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> تعديل</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i>حذف</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-plus">خواتم عقيق</td>
+                                <td>10</td>
+                                <td>jeddah</td>
+                                <td>0531245846</td>
+                                <td>29-03-2018</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                            href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> عرض</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> تعديل</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> حذف</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-plus">سامر للالعاب</td>
+                                <td>30</td>
+                                <td>dammam</td>
+                                <td>0597441258 </td>
+                                <td>29-03-2018</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                            href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> عرض</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> تعديل</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> حذف</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+              
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
