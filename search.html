@@ -8,10 +8,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" type="text/css" href="css/header_footer.css">
+ 
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
 <link rel="stylesheet" type="text/css" href="css/main_stylesheet.css">
-<link rel="stylesheet" type="text/css" href="css/search.css">
 </head>
 
 <body>
@@ -80,7 +79,7 @@
 						</div>
 						<nav class="navbar">
 							<ul class="navbar_menu">
-                <li><a href="catogryGifts.html">العروض</a></li>
+                <li><a href="catogryGifts.html">الهدايا</a></li>
 								<li><a href="categoryFood.html">طعام</a></li>
 								<li><a href="catogryClothes.html">أزياء</a></li>
 								<li><a href="categoryCare.html">عناية</a></li>
@@ -138,7 +137,7 @@
 				<li class="menu_item"><a href="categoryFood.html">طعام</a></li>
 				<li class="menu_item"><a href="catogryClothes.html">أزياء</a></li>
 				<li class="menu_item"><a href="categoryCare.html">عناية</a></li>
-				<li class="menu_item"><a href="catogryGifts.html">عروض</a></li>
+				<li class="menu_item"><a href="catogryGifts.html">هدايا</a></li>
 				<li class="menu_item">
 					<a href="chatting.html">
 						<span id="massages_no"> 0 </span>
@@ -152,7 +151,7 @@
 	
 	</div>
 <!--header ends -->
-
+<div class="search-body">
 <div class="container search-cont">
 <div class="row">
   <!-- BEGIN SEARCH RESULT -->
@@ -177,38 +176,13 @@
               <label><input type="checkbox" class="icheck"> عناية</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> عروض</label>
+              <label><input type="checkbox" class="icheck"> هدايا</label>
             </div>
             <!-- END FILTER BY CATEGORY -->
             
             <div class="padding"></div>
             
-            <!-- BEGIN FILTER BY DATE -->
-            <h4>بالتاريخ:</h4>
-            من
-            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
-              <input type="text" class="form-control">
-              <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
-            </div>
-            <input type="hidden" id="dtp_input1" value="">
-            
-            الى
-            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
-              <input type="text" class="form-control">
-              <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
-            </div>
-            <input type="hidden" id="dtp_input2" value="">
-            <!-- END FILTER BY DATE -->
-            
-            <div class="padding"></div>
-            
-            <!-- BEGIN FILTER BY PRICE -->
-            <h4>بالسعر:</h4>
-            بين <div id="price1">100 ريال</div> الى<div id="price2">1000ريال</div>
-            <div class="slider-primary">
-              <div class="slider slider-horizontal" style="width: 152px;"><div class="slider-track"><div class="slider-selection" style="left: 30%; width: 50%;"></div><div class="slider-handle round" style="left: 30%;"></div><div class="slider-handle round" style="left: 80%;"></div></div><div class="tooltip top hide" style="top: -30px; left: 50.1px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">100 : 1000</div></div><input type="text" class="slider" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="1" data-slider-value="[100,1000]" data-slider-tooltip="hide"></div>
-            </div>
-            <!-- END FILTER BY PRICE -->
+
           </div>
           <!-- END FILTERS -->
           <!-- BEGIN RESULT -->
@@ -258,57 +232,55 @@
                 <tbody><tr>
                   <td class="number text-center">1</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300/FF8C00" alt=""></td>
-                  <td class="product"><strong>منتج 1</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                  <td class="product"><strong>منتج 1</strong><br></td>
+
                   <td class="price text-right">350 ريال</td>
                 </tr>
                 <tr>
                   <td class="number text-center">2</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300/5F9EA0" alt=""></td>
-                  <td class="product"><strong>منتج 2</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
+                  <td class="product"><strong>منتج 2</strong><br></td>
                   <td class="price text-right">1,000 ريال</td>
                 </tr>
                 <tr>
                   <td class="number text-center">3</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300" alt=""></td>
-                  <td class="product"><strong>منتج 3</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></span></td>
+                  <td class="product"><strong>منتج 3</strong><br></td>
                   <td class="price text-right">550 ريال</td>
                 </tr>
                 <tr>
                   <td class="number text-center">4</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300/8A2BE2" alt=""></td>
-                  <td class="product"><strong>منتج 4</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></td>
+                  <td class="product"><strong>منتج 4</strong><br></td>
+
                   <td class="price text-right">330 ريال</td>
                 </tr>
                 <tr>
                   <td class="number text-center">5</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300" alt=""></td>
-                  <td class="product"><strong>منتج 5</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></td>
+                  <td class="product"><strong>منتج 5</strong><br></td>
+
                   <td class="price text-right">540 ريال</td>
                 </tr>
                 <tr>
                   <td class="number text-center">6</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300/6495ED" alt=""></td>
-                  <td class="product"><strong>منتج 6</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                  <td class="product"><strong>منتج 6</strong><br></td>
+
                   <td class="price text-right">870 ريال</td>
                 </tr>
                 <tr>
                   <td class="number text-center">7</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300/DC143C" alt=""></td>
-                  <td class="product"><strong>منتج 7</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
+                  <td class="product"><strong>منتج 7</strong><br></td>
+
                   <td class="price text-right">620 ريال</td>
                 </tr>
                 <tr>
                   <td class="number text-center">8</td>
                   <td class="image"><img src="https://via.placeholder.com/400x300/9932CC" alt=""></td>
-                  <td class="product"><strong>منتج 8</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                  <td class="product"><strong>منتج 8</strong><br></td>
+
                   <td class="price text-right">550 ريال</td>
                 </tr>
               </tbody></table>
@@ -316,7 +288,7 @@
             <!-- END TABLE RESULT -->
             
             <!-- BEGIN PAGINATION -->
-            <ul class="pagination">
+            <ul class="pagination" >
               <li class="disabled"><a href="#">«</a></li>
               <li class="active"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
@@ -335,6 +307,7 @@
   <!-- END SEARCH RESULT -->
 </div>
 </div>
+</div>
 
 <!-- Footer starts -->
 
@@ -345,7 +318,7 @@
                 <div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
                     <ul class="footer_nav">
                         <li><a href="#">السياسات</a></li>
-                        <li><a href="#">أسئلة شائعة</a></li>
+                         
                         <li><a href="contactUS.html">تواصل معنا</a></li>
                         <li><a href="aboutUs.html">حول رف؟</a></li>
                     </ul>
