@@ -17,17 +17,17 @@
             
             <!-- BEGIN FILTER BY CATEGORY -->
             <h4>التصنيف</h4>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck">طعام</label>
+            <div class="radio">
+              <label><input type="radio" class="ichoose">طعام</label>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> أزياء</label>
+            <div class="radio">
+              <label><input type="radio" class="ichoose"> أزياء</label>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> عناية</label>
+            <div class="radio">
+              <label><input type="radio" class="ichoose"> عناية</label>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> هدايا</label>
+            <div class="radio">
+              <label><input type="radio" class="ichoose"> هدايا</label>
             </div>
             <!-- END FILTER BY CATEGORY -->
             
