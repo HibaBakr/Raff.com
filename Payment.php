@@ -93,4 +93,4 @@
 	<!------------الكود ينتهي هنا-------------->
 	<!-- Footer starts -->
 
-	<?php include "../includes/footer.php" ?>
+	<?php include "includes/footer.php" ?>
