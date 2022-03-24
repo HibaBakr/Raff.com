@@ -38,7 +38,7 @@
 								<ul class="top_nav_menu">
 
 									<!-- Massages / Language / Account -->
-									<li class="massages" style="display:none;">
+									<li class="massages" >
 										<a href="chatting.php">
 											<i class="fa fa-envelope"></i>
 											<span id="massages_no" class="massages_no">0</span>
@@ -126,7 +126,7 @@
 					<li class="menu_item"><a href="catogryClothes.php">أزياء</a></li>
 					<li class="menu_item"><a href="categoryCare.php">عناية</a></li>
 					<li class="menu_item"><a href="catogryGifts.php">هدايا</a></li>
-					<li class="menu_item" style="display: none;">
+					<li class="menu_item" >
 						<a href="chatting.php">
 							<span id="massages_no"> 0 </span>
 							<i class="fa fa-envelope"></i>
