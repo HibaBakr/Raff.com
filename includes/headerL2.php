@@ -38,7 +38,7 @@
 								<ul class="top_nav_menu">
 
 									<!-- Massages / Language / Account -->
-									<li class="massages" style="display:none;">
+									<li class="massages">
 										<a href="../chatting.php">
 											<i class="fa fa-envelope"></i>
 											<span id="massages_no" class="massages_no">0</span>
