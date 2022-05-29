@@ -1,0 +1,574 @@
+/* CSS Document */
+
+/******************************
+
+COLOR PALETTE:
+
+white: #ffffff
+light grey: #777777
+dark grey: #333333
+black: #000000
+Nude: #C4A39B
+light Nude: #eed5d1
+
+*********************
+[Table of Contents]
+
+1. Body and general
+2. Header
+3. Side navigation
+4. Footer
+5. Main page
+6. Datatables
+7. Promotion
+8. Approval
+9. Add category
+10 Admin login
+11. Dashboard
+
+******************************/
+/***********************************************************************
+1. Body and general stuff
+*********************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  ;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  background: #FFFFFF;
+  color: #333333;
+}
+
+div {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 600;
+  color: #989898;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+p a {
+  display: inline;
+  position: relative;
+  color: inherit;
+  border-bottom: solid 2px #eed5d1;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+p a:active {
+  position: relative;
+  color: #C4A39B;
+}
+
+p a:hover {
+  color: #C4A39B;
+  background: #eed5d1;
+}
+
+p a:hover::after {
+  opacity: 0.2;
+}
+
+::selection {
+  background: #eed5d1;
+  color: #C4A39B;
+}
+
+p::selection {
+  background: #eed5d1;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #777777 !important;
+}
+
+:-moz-placeholder
+
+/* older Firefox*/
+  {
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #777777 !important;
+}
+
+::-moz-placeholder
+
+/* Firefox 19+ */
+  {
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #777777 !important;
+}
+
+:-ms-input-placeholder {
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #777777 !important;
+}
+
+::input-placeholder {
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #777777 !important;
+}
+
+.form-control {
+  color: #C4A39B;
+}
+
+section {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.transition_300 {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.fill_height {
+  height: 100%;
+}
+
+.body_container {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+/***********************************************************************
+2. Header(nav)
+*********************************************************************/
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #C4A39B;
+  overflow: visible;
+  box-shadow: 1px 0px 5px gray;
+  direction: rtl;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #818181;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar .dropdown-menu a:hover {
+  color: #C4A39B;
+}
+
+.navbar .nav-link:hover {
+  color: #FFFFFF;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #C4A39B;
+}
+
+
+/***********************************************************************
+3. side nav
+*********************************************************************/
+
+.admin-logo {
+  background-color: #C4A39B;
+  width: 100%;
+  height: 73px;
+  box-shadow: 1px 0px 5px gray;
+}
+
+.sidenav {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 0px;
+  box-shadow: 1px 0px 5px gray;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #C4A39B;
+}
+
+.sidenav ul {
+  list-style: none;
+  margin-left: 10px;
+
+}
+
+.sidenav ul li a {
+  font-size: 16px;
+
+}
+
+.main {
+  margin-left: 261px;
+  /* Same as the width of the sidenav */
+}
+
+/***********************************************************************
+4. Footer
+*********************************************************************/
+footer{
+  width: 82%;
+  height: 2em;
+  background-color: whitesmoke;
+  text-align: center;
+  position: relative;
+  margin-top: 2em;
+  float: right;
+}
+.footcopy{
+  text-align: center;
+  padding: 1px;
+  width: 80%;
+  float: right;
+}
+/***********************************************************************
+5. Main page
+*********************************************************************/
+
+/***********************************************************************
+6. Data tables
+*********************************************************************/
+.cusdata,
+.smdata {
+  margin: 50px;
+  width: 90%;
+  float: right;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgb(179, 173, 173);
+  border-radius: 20px;
+  padding: 30px;
+  direction: rtl;
+  text-align: right;
+
+}
+
+.cusdata .table,
+.smadat .table {
+  background-color: #ffffff;
+
+}
+
+/***********************************************************************
+7. Promotion
+*********************************************************************/
+.promotion {
+  margin: auto;
+  margin: 13%;
+  margin-top: 10%;
+  width: 69%;
+  float: right;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgb(179, 173, 173);
+  border-radius: 20px;
+  padding: 30px;
+  direction: rtl;
+  text-align: right;
+
+
+
+}
+
+
+/***********************************************************************
+8. Approval
+*********************************************************************/
+
+
+.approve .btn-secondary {
+  background-color: transparent;
+  border-color: #C4A39B;
+  border-width: 3px;
+  color: #737373;
+
+}
+
+
+.approve .card-text {
+  font-size: 15px;
+  color: #737373;
+
+}
+
+.approve .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
+}
+
+.approve .mb-3 {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin: 3px;
+}
+
+.approve #services .row {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+
+}
+
+/***********************************************************************
+9. Add category
+*********************************************************************/
+.BAborder {
+  border-style: groove;
+  border-color: #C4A39B;
+  width: 600px;
+  margin-left: 200px;
+  margin-top: 100px;
+  margin-right: 200px;
+}
+
+.BAlabels {
+  display: flex;
+  width: 80%;
+  height: 40px;
+  border-radius: 2px;
+  background: #fff;
+  text-align: center;
+
+  margin: auto;
+  margin-top: 20px;
+}
+
+.BAfont {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 40px;
+
+}
+
+.BAbutton {
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+  border: 3px solid #C4A39B;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-left: 220px;
+
+}
+
+.BAbutton:hover {
+  background-color: #C4A39B;
+  color: white;
+}
+
+
+
+/***********************************************************************
+10. Login
+*********************************************************************/
+
+.login-form__title {
+  color: #818181;
+  margin-bottom: 20px;
+}
+
+.login-form__btn {
+  background: #967972;
+  color: #fff;
+  padding: 13px 40px;
+  font-size: 14px;
+}
+
+.login-form__btn i,
+.login-form__btn span {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.login-form__btn.submit {
+  padding: 15px 40px;
+  background: #C4A39B;
+  font-weight: 700;
+}
+
+.login-form__intro p,
+.login-form__intro h4 {
+  margin-bottom: 0;
+  color: #8f7a74;
+}
+
+.login-form__intro h4 {
+  padding: 10px 0;
+}
+
+.login-form__intro a {
+  color: #8f746d;
+  text-decoration: underline;
+}
+
+.login-input .form-group {
+  margin-bottom: 30px;
+}
+
+.login-input .form-group label {
+  color: #796e6b;
+  font-size: 15px;
+}
+
+.login-input .form-group .form-control {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #f5f5f5;
+  padding-left: 0;
+  color: #e2c0ba;
+}
+
+.login-form {
+  margin-top: 3em;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.error-bg {
+  background: #eed5d1;
+}
+
+.error-text {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+/***********************************************************************
+11. Dashboard
+*********************************************************************/
